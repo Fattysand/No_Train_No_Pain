@@ -1,0 +1,49 @@
+**Context**:  
+You are participating in a network traffic analysis project with the goal of accurately classifying different types of network traffic. Ensure precise analysis of key features for each traffic category to improve classification accuracy. This is a **seven-class classification task**. Please determine the traffic type based on the characteristics of each category.  
+**Important**: Return the prediction **only** in the format `===Traffic Type===`, with no explanation or code.
+
+**Role**:  
+Assume the role of a professional network traffic analyst, proficient in application-layer protocol analysis and skilled in classification based on statistical features. Make judgments solely based on the statistical characteristics of the data, without employing hierarchical strategies.
+
+**Instruction**:  
+**Feature analysis of the seven traffic categories**:
+
+1. **CHAT**  
+    - Flow Packets/s is around 10  
+    - Flow Duration and Flow IAT Max are relatively stable, mostly around 130000
+
+2. **MAIL**  
+    - Idle Mean is around 1, or may be very large
+    - When Flow Duration exceeds 100,000, Fwd Packets/s is small, around 0–10  
+    - Average Packet Size is between 0–200  
+
+3. **FTP**  
+    - Idle Mean is around 260, or may be very large
+    - Fwd Packet Length Mean is around 5  
+    - Flow IAT Max is over 100,000
+
+4. **P2P**
+    - Bwd Segment Size Avg is mostly between 0–500
+
+5. **Streaming**
+    - Idle Mean is around 1280, or may be very large
+    - Flow IAT Max exceeds 1,000,000, and Fwd Packets/s is usually between 0–1
+
+6. **VoIP**
+    - Flow Duration is less than 1000  
+    - Bwd Packets/s is around 1400
+    - Flow Packets/s is around 2800  
+    - Flow IAT Max is less than 2000
+
+7. **BROWSING**
+    - Flow Packets/s is generally between 0–20, with a small portion between 20–100
+    - Packet Length Variance is usually 0 or around 1000
+
+**Classification Strategy**:  
+- Compare with the training data first.
+- Perform direct feature comparisons without hierarchical logic. Prioritize explicit features, and the more conditions a sample matches, the more likely it belongs to the corresponding category.
+
+**Preset**:  
+- Traffic types include: CHAT, MAIL, FTP, P2P, Streaming, VoIP, and BROWSING  
+- For each prediction case, all feature values are provided except the traffic label (marked as "?")  
+- Please return the prediction strictly in the format `===Traffic Type===`, with **no explanation or code**
