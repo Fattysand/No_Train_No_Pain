@@ -17,8 +17,9 @@ def majority_vote(group):
     return random.choice(candidates)
 
 denoised_labels = []
-for i in range(0, len(df_sorted), 5):
-    group = df_sorted.iloc[i:i+5]
+k = 7
+for i in range(0, len(df_sorted), k):
+    group = df_sorted.iloc[i:i+k]
     label = majority_vote(group)
     denoised_labels.extend([label] * len(group))
 df_sorted['Denoised_Label'] = denoised_labels
