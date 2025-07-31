@@ -1,35 +1,41 @@
 # No_Train_No_Pain
 
 
-实验数据：
+Dataset details：
 VPN(service)：
-BROWSING     500
-CHAT         500
-FTP          500
-MAIL         500
-P2P          500
-Streaming    500
-VoIP         500
+| class   | count |
+|------------|------|
+| BROWSING   | 500  |
+| CHAT       | 500  |
+| FTP        | 500  |
+| MAIL       | 500  |
+| P2P        | 500  |
+| Streaming  | 500  |
+| VoIP       | 500  |
 TFC(application)：
-BitTorrent         500
-FTP                500
-Gmail              500
-MySQL              500
-Outlook            500
-SMB                500
-Skype              500
-Weibo              500
-WorldOfWarcraft    500
+| class   | count |
+|--------------------|------|
+| BitTorrent         | 500  |
+| FTP                | 500  |
+| Gmail              | 500  |
+| MySQL              | 500  |
+| Outlook            | 500  |
+| SMB                | 500  |
+| Skype              | 500  |
+| Weibo              | 500  |
+| WorldOfWarcraft    | 500  |
 IOT(application)：
-Interactions_Cameras    500
-Power_Audio             500
-Power_Cameras           500
-Idle                    500
-Interactions_Audio      500
-Power_Other             315
-ComingHome              267
-LeavingHome             167
-Interactions_Other      133
+| class   | count |
+|------------------------|------|
+| Interactions_Cameras   | 500  |
+| Power_Audio            | 500  |
+| Power_Cameras          | 500  |
+| Idle                   | 500  |
+| Interactions_Audio     | 500  |
+| Power_Other            | 315  |
+| ComingHome             | 267  |
+| LeavingHome            | 167  |
+| Interactions_Other     | 133  |
 
 
 
