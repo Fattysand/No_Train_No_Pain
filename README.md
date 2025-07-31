@@ -2,6 +2,7 @@
 
 
 Dataset details：
+
 VPN(service)：
 | class   | count |
 |------------|------|
@@ -12,6 +13,7 @@ VPN(service)：
 | P2P        | 500  |
 | Streaming  | 500  |
 | VoIP       | 500  |
+
 TFC(application)：
 | class   | count |
 |--------------------|------|
@@ -24,6 +26,7 @@ TFC(application)：
 | Skype              | 500  |
 | Weibo              | 500  |
 | WorldOfWarcraft    | 500  |
+
 IOT(application)：
 | class   | count |
 |------------------------|------|
@@ -36,7 +39,6 @@ IOT(application)：
 | ComingHome             | 267  |
 | LeavingHome            | 167  |
 | Interactions_Other     | 133  |
-
 
 
 The provided dataset is a pre-processed dataset. The original dataset is too large to be included here, but you can download it and use CICFlowMeter for feature extraction.
