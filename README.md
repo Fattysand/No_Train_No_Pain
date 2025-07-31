@@ -4,7 +4,7 @@
 Dataset details：
 
 VPN(service)：
-| class   | count |
+| Class   | Count |
 |------------|------|
 | BROWSING   | 500  |
 | CHAT       | 500  |
@@ -15,7 +15,7 @@ VPN(service)：
 | VoIP       | 500  |
 
 TFC(application)：
-| class   | count |
+| Class   | Count |
 |--------------------|------|
 | BitTorrent         | 500  |
 | FTP                | 500  |
@@ -28,7 +28,7 @@ TFC(application)：
 | WorldOfWarcraft    | 500  |
 
 IOT(application)：
-| class   | count |
+| Class   | Count |
 |------------------------|------|
 | Interactions_Cameras   | 500  |
 | Power_Audio            | 500  |
