@@ -45,3 +45,23 @@ The provided dataset is a pre-processed dataset. The original dataset is too lar
 
 The workflow is to directly locate the scripts under the `llm_classify` folder, fill in the local LLM model path or API token, and execute them using Python. Then, use the scripts under the `TD` folder on the obtained results to get the final output.
 
+### 🔧 Running Instructions
+
+To reproduce the results, please follow the steps below:
+
+1. **Modify the local path** in the script `llm_classify/qwen3/qwen_tfc_proc.py` to match your environment.
+2. Execute the script by running:
+
+   ```bash
+   python llm_classify/qwen3/qwen_tfc_proc.py
+   ```
+
+3. After obtaining the intermediate output, update the **input path** accordingly in `TD/temporal_denoising.py`.
+
+4. Run the temporal denoising module:
+
+   ```bash
+   python TD/temporal_denoising.py
+   ```
+
+By following these steps, you will obtain the final classification results as reported in the study.
