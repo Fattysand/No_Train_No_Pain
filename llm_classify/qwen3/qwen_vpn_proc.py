@@ -11,7 +11,7 @@ model_path = "/home/fattysand/workspace/llm_models/Qwen3-32B"
 # Define sample size
 sample_size = 10
 
-output_excel_path = f"result/vpn_llama_{sample_size}_results.xlsx"
+output_excel_path = f"result/vpn_qwen_32_{sample_size}_results.xlsx"
 os.makedirs(os.path.dirname(output_excel_path), exist_ok=True)
 
 print("Loading model...")

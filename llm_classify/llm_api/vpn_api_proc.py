@@ -9,7 +9,7 @@ client = OpenAI(base_url='your_url', api_key='your_api_key')
 # Define sample size
 sample_size = 10
 
-output_excel_path = f"result/vpn_llama_{sample_size}_results.xlsx"
+output_excel_path = f"result/vpn_apimodel_{sample_size}_results.xlsx"
 os.makedirs(os.path.dirname(output_excel_path), exist_ok=True)
 
 training_data_path = f'../../data/ISCXVPN2016/VPN_sampled_{sample_size}_train.csv'
